@@ -1,4 +1,4 @@
-# TecniTute — Beta 1
+# TecniTute — Beta 1.1
 
 Juego local de Tute por parejas para un jugador y tres rivales/compañero controlados por el ordenador. Proyecto independiente de TecniMus: conserva sus ilustraciones de palos y figuras y la estética de mesa, con un motor específico de Tute.
 
@@ -24,7 +24,7 @@ Referencia de la modalidad: https://www.nhfournier.es/como-jugar/tute/ . Existen
 
 ## Incluido
 
-Cartas animadas desde cada jugador al centro; recogida de baza hacia el ganador; turnos individuales destacados; mano y triunfo permanentes; bocadillos; cantes del compañero visibles; sonidos diferenciados de carta, baza, canto y victoria/derrota; volumen y sonido persistentes; consejos opcionales inicialmente apagados; recuento de cartas/cantes/últimas y libreta de bazas; interfaz móvil con acciones inferiores; preferencia de movimiento reducido; emblema e iconos propios TT.
+Cartas animadas desde cada jugador al centro; recogida de baza hacia el ganador; turnos individuales destacados; mano y triunfo permanentes; bocadillos; cantes del compañero visibles; sonidos diferenciados de carta, baza, canto y victoria/derrota; volumen y sonido persistentes; consejos opcionales inicialmente apagados; recuento de cartas/cantes/últimas y libreta de bazas; interfaz móvil con acciones inferiores; preferencia de movimiento reducido; emblema TecniTute personalizado en cabecera, tapete e iconos.
 
 Las cartas numéricas muestran tantas imágenes del palo como indica su valor, con espadas pequeñas y contenidas. Se conservan sota, caballo y rey personalizados. Los contrincantes mantienen sus cartas ocultas hasta terminar la mano. La IA decide con su propia mano y las cartas de la baza, sin leer manos ajenas.
 
@@ -40,3 +40,7 @@ node tests/interface.cjs
 Verificado automáticamente: 100 partidas deterministas (397 manos completas, 309 cantes), conservación de las 40 cartas, total de 120 puntos de cartas + 10 de últimas + cantes, obligaciones de palo/triunfo, prioridad de cuarenta, participación de ambos compañeros, tute, desempate, rotación, rechazo de acciones inválidas, cinco manos desde una simulación DOM, preferencias y reinicio mientras una jugada está pendiente.
 
 Limitación de esta entrega: las pruebas DOM no son un navegador. Queda pendiente probar visualmente en dispositivos reales el móvil estrecho/estándar/escritorio, la fluidez de las animaciones, el audio y la instalación. No se dispone de un navegador ejecutable en el entorno de creación. Primera versión jugable, no validación definitiva de todas las variantes locales del Tute.
+
+## Beta 1.1 — Logo personalizado
+
+Integra el emblema aportado por el usuario, conservando su dibujo completo. Iconos de 192/512 px, icono adaptable, Apple Touch de 180 px y favicon de 48 px. Caché versionada para actualizar los recursos. Si un acceso directo existente conserva el icono antiguo tras recargar la web, elimínalo y vuelve a añadirlo. Motor y reglas sin cambios.
